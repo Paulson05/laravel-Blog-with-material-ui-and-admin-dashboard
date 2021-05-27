@@ -109,9 +109,9 @@
                         <ul class="nav">
 
                             <li >
-                                <a href="">
-                                    <span class="sidebar-mini-icon">H</span>
-                                    <span class="sidebar-normal">Home</span>
+                                <a href="{{route('post.index')}}">
+                                    <span class="sidebar-mini-icon">P</span>
+                                    <span class="sidebar-normal">Posts</span>
                                 </a>
                             </li>
 

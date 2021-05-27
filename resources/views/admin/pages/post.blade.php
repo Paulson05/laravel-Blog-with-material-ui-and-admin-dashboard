@@ -1,5 +1,5 @@
 @extends('templetes.defaults')
-@section('title', '| about')
+@section('title', '| post')
 @section('content')
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
@@ -18,10 +18,10 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">About page</h4>
+                            <h4 class="card-title">POSt</h4>
                         </div>
                         <div class="col-4 text-right">
-                            <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">Add user</a>
+                            <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">+</a>
                         </div>
                         <div class="modal" id="myModal">
                             <div class="modal-dialog modal-lg">
@@ -35,7 +35,7 @@
 
                                     <!-- Modal body -->
                                     <div class="modal-body">
-                                        <form action="{{route('about.store')}}" method="post" enctype= "multipart/form-data" >
+                                        <form action="{{route('post.store')}}" method="post" enctype= "multipart/form-data" >
                                             @csrf
 
                                             <div class="row">
@@ -48,29 +48,15 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                                    <div class="form-group">
-                                                        <strong>paragraph</strong>
-                                                        <input type="text" name="paragraph" class="form-control" placeholder="profile">
 
-                                                    </div>
 
-                                                </div>
-                                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                                    <div class="form-group">
-                                                        <strong>image</strong>
-                                                        <input type="file" name="image" class="form-control" placeholder="profile">
-
-                                                    </div>
-
-                                                </div>
 
 
 
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                                     <div class="form-group">
-                                                        <strong>about me</strong>
-                                                       <textarea  id="mytextarea" cols="10" rows="5" placeholder="about me" class="form-control" name="about"></textarea>
+                                                        <strong>body</strong>
+                                                       <textarea  id="mytextarea" cols="10" rows="5" placeholder="body" class="form-control" name="body"></textarea>
 
                                                     </div>
 
@@ -106,40 +92,28 @@
                                 ID
                             </th>
                             <th >
-                                Name
+                             title
                             </th>
+
                             <th>
-                              profile
+                               body
                             </th>
-                            <th>
-                                email
-                            </th>
-                            <th>
-                                phone-number
-                            </th>
-                            <th>
-                               About me
-                            </th>
+
                             </thead>
                             <tbody>
                             <tr>
-                                @foreach($abouts as $about)
+                                @foreach($posts as $post)
                                 <td>
-                                   {{$about->id}}
-                                </td>
-                                <td>
-                                   {{$about->about}}
-                                </td>
-                                <td>
-                                  {{$about->title}}
-                                </td>
-                                <td>
-                                    {{$about->paragraph}}
+                                   {{$post->id}}
                                 </td>
 
-                                    <td >
-                                        <img   src ="/upload/images/{{$about->image}}" height= "70px;" width = "80px;" style="border-radius: 98px;" >
-                                    </td>
+                                <td>
+                                  {{$post->title}}
+                                </td>
+                                <td>
+                                    {{$post->body}}
+                                </td>
+
                                     <td>
                                         <a href="" title="show">
                                             <i class="btn btn-primary btn-sm fa fa-eye" ></i>

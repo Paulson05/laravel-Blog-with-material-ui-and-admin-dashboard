@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('admin', [AdminController::class, 'admin'])->name('admin');
+Route::resource('post', PostController::class)->only(['index','store','show','update','destroy','edit',  ]);
