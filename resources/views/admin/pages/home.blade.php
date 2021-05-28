@@ -1,4 +1,4 @@
-@extends('templetes.defaults')
+@extends('admin.templetes.defaults')
 @section('title', '| home')
 @section('content')
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
@@ -10,7 +10,7 @@
     </script>
 
     <div class="">
-        @include('templetes.partials.headerpanel')
+        @include('admin.templetes.partials.headerpanel')
         <div class="row">
             <div class="col-md-12">
                 <div class="card ">

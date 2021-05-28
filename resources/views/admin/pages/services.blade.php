@@ -1,9 +1,9 @@
-@extends('templetes.defaults')
+@extends('admin.templetes.defaults')
 @section('title', '| services')
 @section('content')
 
     <div class="container">
-        @include('templetes.partials.headerpanel')
+        @include('admin.templetes.partials.headerpanel')
         <div class="row">
             <div class="col-md-12">
                 <div class="card ">

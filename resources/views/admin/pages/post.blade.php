@@ -1,4 +1,4 @@
-@extends('templetes.defaults')
+@extends('admin.templetes.defaults')
 @section('title', '| post')
 @section('content')
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
@@ -11,7 +11,7 @@
 
     <div class="">
 
-    @include('templetes.partials.headerpanel')
+    @include('admin.templetes.partials.headerpanel')
     <div class="row">
         <div class="col-md-12">
             <div class="card ">
@@ -104,7 +104,10 @@
                             </th>
 
                             <th>
-                               body
+                               slug
+                            </th>
+                            <th>
+                                body
                             </th>
 
                             </thead>
@@ -118,6 +121,9 @@
                                 <td>
                                   {{$post->title}}
                                 </td>
+                                    <td>
+                                        {{$post->slug}}
+                                    </td>
                                 <td>
                                     {{substr($post->body, 0, 40)}} {{strlen(strip_tags($post->body)) > 40 ? "...." : ""}}
                                 </td>

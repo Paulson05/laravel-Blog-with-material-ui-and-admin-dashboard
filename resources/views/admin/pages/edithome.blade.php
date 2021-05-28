@@ -1,6 +1,6 @@
-@extends('templetes.defaults')
+@extends('admin.templetes.defaults')
 @section('content')
-    @include('templetes.partials.headerpanel')
+    @include('admin.templetes.partials.headerpanel')
     <div class="container">
 
 
