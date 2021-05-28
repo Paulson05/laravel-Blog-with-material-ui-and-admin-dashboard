@@ -7,6 +7,8 @@
 
 <body class="sidebar-mini " >
 @include('admin.templetes.partials.head')
+
+
 @include('admin.templetes.partials.sidenavbar')
 @yield('content')
 @include('admin.templetes.partials.footer')

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\PostController;
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
@@ -26,5 +27,7 @@ Route::get('/', function () {
 
 Route::get('admin', [AdminController::class, 'admin'])->name('admin');
 Route::resource('post', PostController::class)->only(['index','store','show','update','destroy','edit',  ]);
+Route::resource('category', CategoriesController::class)->only(['index','store','show','update','destroy','edit',  ]);
+
 Route::get('blog/{post:slug}', [BlogController::class, 'getSinglePost'])->name('getSinglePost')
     ->where('slug', '[\w\d\-\_]+');

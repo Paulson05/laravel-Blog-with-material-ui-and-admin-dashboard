@@ -1,15 +1,17 @@
-{{--@extends('templetes.defaults')--}}
-{{--@section('title', "|$post->title")--}}
+@extends('homepage.templetes.dafaults')
+@section('title', "|$post->title")
 
 
-{{--@section('content')--}}
+@section('content')
     <div class="container">
-        <div class="row"
+        <div class="row">
             <div class="container">
                 <div class="col-md-8 justify-content-center">
 
-                    <h2 class="text-center ">{{$post->title}}</h2>
-                    <h2 class=" text-capitalize">{{$post->body}}</h2>
+                  <div class="container">
+                      <h2 class="text-center ">{{$post->title}}</h2>
+                      <h2 class=" text-capitalize">{{$post->body}}</h2>
+                  </div>
                     <hr>
 {{--                    category: <span class="btn btn-primary">{{optional($post->category)->name}}</span>--}}
 {{--                    <hr>--}}
@@ -85,7 +87,7 @@
 {{--        </div>--}}
     </div>
 
-{{--@endsection--}}
+@endsection
 
 
 

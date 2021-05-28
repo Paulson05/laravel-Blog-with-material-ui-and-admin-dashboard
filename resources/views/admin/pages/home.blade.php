@@ -33,7 +33,7 @@
                                         </div>
 
                                         <!-- Modal body -->
-                                        <div class="modal-body">
+                                        <div class="modal-body ps-child">
                                             <form action="" method="post" enctype= "multipart/form-data" >
                                                 @csrf
 

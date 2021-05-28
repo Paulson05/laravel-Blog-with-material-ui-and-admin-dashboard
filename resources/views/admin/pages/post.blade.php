@@ -34,7 +34,7 @@
                                     </div>
 
                                     <!-- Modal body -->
-                                    <div class="modal-body">
+                                    <div class="modal-body ps-child">
                                         <form action="{{route('post.store')}}" method="post" enctype= "multipart/form-data" >
                                             @csrf
 
@@ -65,6 +65,14 @@
                                                     <div class="form-group">
                                                         <strong>body</strong>
                                                        <textarea  id="mytextarea" cols="10" rows="5" placeholder="body" class="form-control" name="body"></textarea>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <strong>body</strong>
+                                                        <textarea  id="mytextarea" cols="10" rows="5" placeholder="body" class="form-control" name="body"></textarea>
 
                                                     </div>
 

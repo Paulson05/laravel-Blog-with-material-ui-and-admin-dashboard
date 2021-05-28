@@ -130,9 +130,9 @@
                             </li>
 
                             <li >
-                                <a href="">
+                                <a href="{{route('category.index')}}">
                                     <span class="sidebar-mini-icon">C</span>
-                                    <span class="sidebar-normal">Counter</span>
+                                    <span class="sidebar-normal">Category</span>
                                 </a>
                             </li>
 

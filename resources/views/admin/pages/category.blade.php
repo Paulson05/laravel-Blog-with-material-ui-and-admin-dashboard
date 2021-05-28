@@ -1,5 +1,5 @@
 @extends('admin.templetes.defaults')
-@section('title', '| counter')
+@section('title', '| category')
 @section('content')
 
     <div class="container">
@@ -10,7 +10,7 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-8">
-                                <h4 class="card-title">Counter</h4>
+                                <h4 class="card-title">Category</h4>
                             </div>
                             <div class="col-4 text-right">
                                 <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">+</a>
@@ -21,43 +21,25 @@
 
                                         <!-- Modal Header -->
                                         <div class="modal-header">
-                                            <h4 class="modal-title">Creat counter with label</h4>
+                                            <h4 class="modal-title">Creat category</h4>
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
 
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            <form action="{{route('counter.store')}}" method="post" enctype= "multipart/form-data" >
+                                            <form action="{{route('category.store')}}" method="post" enctype= "multipart/form-data" >
                                                 @csrf
 
                                                 <div class="row">
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
-                                                            <strong>icon</strong>
-                                                            <input type="text" name="icon" class="form-control" placeholder="icon">
+                                                            <strong>name</strong>
+                                                            <input type="text" name="name" class="form-control" placeholder="icon">
 
                                                         </div>
 
                                                     </div>
-
-                                                    <div class="col-xs-12 col-sm-12 col-md-12">
-                                                        <div class="form-group">
-                                                            <strong>counter number</strong>
-                                                            <input type="text" name="counter" class="form-control" placeholder="counter">
-
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-12 col-md-12">
-                                                        <div class="form-group">
-                                                            <strong>label</strong>
-                                                            <input type="text" name="label" class="form-control" placeholder="label">
-
-                                                        </div>
-
-                                                    </div>
-
 
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12 text-left">
@@ -88,32 +70,21 @@
                                     ID
                                 </th>
 
+
                                 <th>
-                               icon
-                                </th>
-                                <th>
-                                    counter number
-                                </th>
-                                <th>
-                             label
+                             category name
                                 </th>
 
                                 </thead>
                                 <tbody>
-                                @foreach($counters as $counter)
+                                @foreach($categories as $category)
                                 <tr>
                                     <td>
-                                        {{$counter->id}}
-                                    </td>
-                                    <td>
-                                        {{$counter->icon}}
-                                    </td>
-                                    <td>
-                                        {{$counter->counter}}
+                                        {{$category->id}}
                                     </td>
 
                                     <td>
-                                        {{$counter->label}}
+                                        {{$category->name}}
                                     </td>
                                     <td>
 
@@ -121,7 +92,7 @@
                                             <i class="btn btn-success btn-sm  fa fa-edit" ></i>
                                         </a>
 
-                                        <form style="display: inline-block" method="post" action="{{route('counter.destroy',['counter'=> $counter->id])}}" >
+                                        <form style="display: inline-block" method="post" action="" >
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-danger  p-0"><i class="btn btn-danger btn-sm fa fa-trash" ></i></button>

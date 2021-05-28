@@ -11,7 +11,7 @@
 <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js" ></script>
 
 <script src="../assets/js/plugins/moment.min.js"></script>
-
+<script src="https://cdn.tiny.cloud/1/dzq2nbo4doqks8r4ev85nuhv0bxzirce0l4tai4aza7yj42i/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
