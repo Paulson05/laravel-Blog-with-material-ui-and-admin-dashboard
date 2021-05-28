@@ -41,9 +41,10 @@ class PostController extends Controller
 
         $this->validate($request,[
             'title' => 'required',
-            'body'=>  'required'
+            'body'=>  'required',
+            'slug' => 'required'
         ]);
-        $array = collect($request->only(['title', 'body']))->all();
+        $array = collect($request->only(['title', 'body', 'slug']))->all();
         Post::create($array);
         return redirect()->back();
     }

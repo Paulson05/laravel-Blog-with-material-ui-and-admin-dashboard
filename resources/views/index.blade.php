@@ -83,191 +83,42 @@
                         <h2 class="title">Featured Articles</h2>
                             <div class="card card-plain card-blog">
                                                                     <div class="row mt-5">
-    <div class="col-md-4">
-        <div class="card-header card-header-image">
-            <a href="article/trends-in-ux-design-for-start-ups.html">
-                                    <img class="img img-raised" src="storage/articles-seeder/6.jpg">
-                            </a>
-        </div>
-    </div>
-    <div class="col-md-8">
-        <h6 class="card-category">
-            <a href="category/technology.html" class="text-dark">Technology</a>
-        </h6>
-        <h3 class="card-title">
-            <a href="article/trends-in-ux-design-for-start-ups.html">Trends in UX design for start-ups</a>
-        </h3>
-        <p class="card-tags">
-                            <a href="tag/destinations.html"><span style="background-color: #4caf50;" class="badge badge-pill">Destinations</span></a>
-                            <a href="tag/start-up.html"><span style="background-color: #6c757d;" class="badge badge-pill">Start-up</span></a>
-                            <a href="tag/trending.html"><span style="background-color: #00bcd4;" class="badge badge-pill">Trending</span></a>
-                            <a href="tag/haute-couture.html"><span style="background-color: #4caf50;" class="badge badge-pill">Haute couture</span></a>
-                    </p>
-        <p class="card-description">
-            This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&#039;t scroll to get here.
-            <a href="article/trends-in-ux-design-for-start-ups.html"> Read More </a>
-        </p>
-        <p class="author">
-            by
-            <a href="author/william-shakespeare.html">
-                <b>William Shakespeare</b>
-            </a> &#8226; Apr 14, 2021 &#8226; 8 min read
-        </p>
-    </div>
-</div>                                                                    <div class="row mt-5">
-    <div class="col-md-4">
-        <div class="card-header card-header-image">
-            <a href="article/how-often-do-you-really-need-to-see-your-doctor.html">
-                                    <img class="img img-raised" src="storage/articles-seeder/article-upd.jpg">
-                            </a>
-        </div>
-    </div>
-    <div class="col-md-8">
-        <h6 class="card-category">
-            <a href="category/technology.html" class="text-dark">Technology</a>
-        </h6>
-        <h3 class="card-title">
-            <a href="article/how-often-do-you-really-need-to-see-your-doctor.html">The most awesome Laravel powered blog</a>
-        </h3>
-        <p class="card-tags">
-                            <a href="tag/web-dev.html"><span style="background-color: #ff9800;" class="badge badge-pill">Web dev</span></a>
-                            <a href="tag/admin-dashboards.html"><span style="background-color: #9c27b0;" class="badge badge-pill">Admin dashboards</span></a>
-                    </p>
-        <p class="card-description">
-            Material Blog PRO Laravel will save you up to 140+ hours of development. You can get your blog up and running in no time.
-            <a href="article/how-often-do-you-really-need-to-see-your-doctor.html"> Read More </a>
-        </p>
-        <p class="author">
-            by
-            <a href="author/admin-guy.html">
-                <b>Admin Guy</b>
-            </a> &#8226; Apr 14, 2021 &#8226; 5 min read
-        </p>
-    </div>
-</div>                                                                    <div class="row mt-5">
-    <div class="col-md-4">
-        <div class="card-header card-header-image">
-            <a href="article/6-apps-you-can-start-building-right-away-with-the-laravel-bundle.html">
-                                    <img class="img img-raised" src="storage/articles-seeder/12.jpg">
-                            </a>
-        </div>
-    </div>
-    <div class="col-md-8">
-        <h6 class="card-category">
-            <a href="category/technology.html" class="text-dark">Technology</a>
-        </h6>
-        <h3 class="card-title">
-            <a href="article/6-apps-you-can-start-building-right-away-with-the-laravel-bundle.html">6 apps you can start building right away with the Laravel bundle</a>
-        </h3>
-        <p class="card-tags">
-                            <a href="tag/web-dev.html"><span style="background-color: #ff9800;" class="badge badge-pill">Web dev</span></a>
-                            <a href="tag/admin-dashboards.html"><span style="background-color: #9c27b0;" class="badge badge-pill">Admin dashboards</span></a>
-                    </p>
-        <p class="card-description">
-            Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses.
-            <a href="article/6-apps-you-can-start-building-right-away-with-the-laravel-bundle.html"> Read More </a>
-        </p>
-        <p class="author">
-            by
-            <a href="author/ernest-hemingway.html">
-                <b>Ernest Hemingway</b>
-            </a> &#8226; Apr 12, 2021 &#8226; 3 min read
-        </p>
-    </div>
-</div>                                                                    <div class="row mt-5">
-    <div class="col-md-4">
-        <div class="card-header card-header-image">
-            <a href="article/how-to-give-up-sugar-without-giving-up-the-fun.html">
-                                    <img class="img img-raised" src="storage/articles-seeder/26.jpg">
-                            </a>
-        </div>
-    </div>
-    <div class="col-md-8">
-        <h6 class="card-category">
-            <a href="category/food.html" class="text-dark">Food</a>
-        </h6>
-        <h3 class="card-title">
-            <a href="article/how-to-give-up-sugar-without-giving-up-the-fun.html">How to give up sugar without giving up the fun</a>
-        </h3>
-        <p class="card-tags">
-                            <a href="tag/healthy-eating.html"><span style="background-color: #f44336;" class="badge badge-pill">Healthy eating</span></a>
-                            <a href="tag/foodie.html"><span style="background-color: #00bcd4;" class="badge badge-pill">Foodie</span></a>
-                            <a href="tag/tips%26tricks.html"><span style="background-color: #e91e63;" class="badge badge-pill">Tips &amp; tricks</span></a>
-                    </p>
-        <p class="card-description">
-            This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&#039;t scroll to get here.
-            <a href="article/how-to-give-up-sugar-without-giving-up-the-fun.html"> Read More </a>
-        </p>
-        <p class="author">
-            by
-            <a href="author/william-shakespeare.html">
-                <b>William Shakespeare</b>
-            </a> &#8226; Apr 12, 2021 &#8226; 5 min read
-        </p>
-    </div>
-</div>                                                                    <div class="row mt-5">
-    <div class="col-md-4">
-        <div class="card-header card-header-image">
-            <a href="article/best-bootstrap-freebies-you-should-be-bookmarking-right-now.html">
-                                    <img class="img img-raised" src="storage/articles-seeder/2.jpg">
-                            </a>
-        </div>
-    </div>
-    <div class="col-md-8">
-        <h6 class="card-category">
-            <a href="category/technology.html" class="text-dark">Technology</a>
-        </h6>
-        <h3 class="card-title">
-            <a href="article/best-bootstrap-freebies-you-should-be-bookmarking-right-now.html">Best Bootstrap freebies you should be bookmarking right now</a>
-        </h3>
-        <p class="card-tags">
-                            <a href="tag/web-dev.html"><span style="background-color: #ff9800;" class="badge badge-pill">Web dev</span></a>
-                            <a href="tag/open-source.html"><span style="background-color: #f44336;" class="badge badge-pill">Open source</span></a>
-                            <a href="tag/admin-dashboards.html"><span style="background-color: #9c27b0;" class="badge badge-pill">Admin dashboards</span></a>
-                    </p>
-        <p class="card-description">
-            This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&#039;t scroll to get here.
-            <a href="article/best-bootstrap-freebies-you-should-be-bookmarking-right-now.html"> Read More </a>
-        </p>
-        <p class="author">
-            by
-            <a href="author/jane-austen.html">
-                <b>Jane Austen</b>
-            </a> &#8226; Apr 10, 2021 &#8226; 5 min read
-        </p>
-    </div>
-</div>                                                                    <div class="row mt-5">
-    <div class="col-md-4">
-        <div class="card-header card-header-image">
-            <a href="article/backpacking-101-choosing-the-right-gear.html">
-                                    <img class="img img-raised" src="storage/articles-seeder/30.jpg">
-                            </a>
-        </div>
-    </div>
-    <div class="col-md-8">
-        <h6 class="card-category">
-            <a href="category/travel.html" class="text-dark">Travel</a>
-        </h6>
-        <h3 class="card-title">
-            <a href="article/backpacking-101-choosing-the-right-gear.html">Backpacking 101: Choosing the right gear</a>
-        </h3>
-        <p class="card-tags">
-                            <a href="tag/budget-traveling.html"><span style="background-color: #e91e63;" class="badge badge-pill">Budget travelling</span></a>
-                            <a href="tag/nature.html"><span style="background-color: #00bcd4;" class="badge badge-pill">Nature</span></a>
-                            <a href="tag/tips%26tricks.html"><span style="background-color: #e91e63;" class="badge badge-pill">Tips &amp; tricks</span></a>
-                    </p>
-        <p class="card-description">
-            This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&#039;t scroll to get here.
-            <a href="article/backpacking-101-choosing-the-right-gear.html"> Read More </a>
-        </p>
-        <p class="author">
-            by
-            <a href="author/leo-tolstoy.html">
-                <b>Leo Tolstoy</b>
-            </a> &#8226; Apr 9, 2021 &#8226; 5 min read
-        </p>
-    </div>
-</div>                                                            </div>
+                                                                          @foreach($posts as $post)
+                                                                                        <div class="col-md-4">
+                                                                                            <div class="card-header card-header-image">
+                                                                                                <a href="article/trends-in-ux-design-for-start-ups.html">
+                                                                                                                        <img class="img img-raised" src="storage/articles-seeder/6.jpg">
+                                                                                                                </a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-8">
+                                                                                            <h6 class="card-category">
+                                                                                                <a href="category/technology.html" class="text-dark">Technology</a>
+                                                                                            </h6>
+                                                                                            <h3 class="card-title">
+                                                                                                <a href="article/trends-in-ux-design-for-start-ups.html">{{$post->title}}</a>
+                                                                                            </h3>
+
+                                                                                            <p class="card-description">
+                                                                                             {{$post->body}}
+                                                                                                <a href="{{ route('getSinglePost',['post'=>$post->slug])  }}" class="btn btn-danger btn-sm"> Read More </a>
+                                                                                            </p>
+                                                                                            <p class="card-tags">
+                                                                                                <a href="tag/destinations.html"><span style="background-color: #4caf50;" class="badge badge-pill">Destinations</span></a>
+                                                                                                <a href="tag/start-up.html"><span style="background-color: #6c757d;" class="badge badge-pill">Start-up</span></a>
+                                                                                                <a href="tag/trending.html"><span style="background-color: #00bcd4;" class="badge badge-pill">Trending</span></a>
+                                                                                                <a href="tag/haute-couture.html"><span style="background-color: #4caf50;" class="badge badge-pill">Haute couture</span></a>
+                                                                                            </p>
+                                                                                            <p class="author">
+                                                                                                by
+                                                                                                <a href="author/william-shakespeare.html">
+                                                                                                    <b>William Shakespeare</b>
+                                                                                                </a> &#8226; Apr 14, 2021 &#8226; 8 min read
+                                                                                            </p>
+                                                                                        </div>
+                                                                        @endforeach
+</div>
+
                         </h2>
                     </div>
                 </div>
@@ -294,7 +145,7 @@
                             </p>
             <p class="card-description">
                 This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&#039;t scroll to get here.
-                <a href="article/10-stress-related-health-issues-you-can-avoid-by-quitting-your-job.html"> Read More </a>
+                <a href="" > Read More </a>
             </p>
             <p class="author">
                 by
@@ -370,133 +221,7 @@
             </div>
         </div>
     </div>
-    <div class="team-5 section-image" style="background-image: url('material/img/bg7.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto text-center">
-                    <h2 class="title">Our Top Authors</h2>
-                    <h5 class="description">This is the paragraph where you can write more details about your team. Keep you
-                        user engaged by providing meaningful information.</h5>
-                </div>
-            </div>
-            <div class="row">
-                                    <div class="col-md-6">
-    <div class="card card-profile card-plain">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="card-header card-header-image">
-                    <a href="author/virginia-woolf.html">
-                        <img class="img img-raised" src="storage/authors-seeder/15.jpg">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="card-body">
-                    <a href="author/virginia-woolf.html">
-                        <h4 class="card-title">Virginia Woolf</h4>
-                    </a>
-                    <p class="card-description">
-                                                    I am swimming in my head and write rather to stablize myself than to make a correct statement.
-                                            </p>
-                </div>
-                <div class="card-footer">
-                                            <a href="https://twitter.com/VWoolfBlog" class="btn btn-just-icon btn-link btn-white" target="_blank" rel="nofollow"><i
-                            class="fa fa-twitter"></i></a>
-                                                            <a href="https://www.facebook.com/VirginiaWoolfAuthor/" class="btn btn-just-icon btn-link btn-white" target="_blank" rel="nofollow"><i
-                            class="fa fa-facebook-square"></i></a>
-                                                                            </div>
-            </div>
-        </div>
-    </div>
-</div>                                    <div class="col-md-6">
-    <div class="card card-profile card-plain">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="card-header card-header-image">
-                    <a href="author/ernest-hemingway.html">
-                        <img class="img img-raised" src="storage/authors-seeder/17.jpg">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="card-body">
-                    <a href="author/ernest-hemingway.html">
-                        <h4 class="card-title">Ernest Hemingway</h4>
-                    </a>
-                    <p class="card-description">
-                                                    In the morning I walked down the Boulevard to the rue Soufflot for coffee and brioche. It was a fine morning. The horse-chestnut trees in the Luxembourg gardens were in bloom.
-                                            </p>
-                </div>
-                <div class="card-footer">
-                                            <a href="https://twitter.com/DailyHemingway" class="btn btn-just-icon btn-link btn-white" target="_blank" rel="nofollow"><i
-                            class="fa fa-twitter"></i></a>
-                                                            <a href="https://www.facebook.com/ErnestHemingwayAuthor/" class="btn btn-just-icon btn-link btn-white" target="_blank" rel="nofollow"><i
-                            class="fa fa-facebook-square"></i></a>
-                                                                                <a href="https://www.linkedin.com/in/ernest-hemingway-91a752b3" class="btn btn-just-icon btn-link btn-white" target="_blank" rel="nofollow"><i
-                            class="fa fa-linkedin"></i></a>
-                                    </div>
-            </div>
-        </div>
-    </div>
-</div>                                    <div class="col-md-6">
-    <div class="card card-profile card-plain">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="card-header card-header-image">
-                    <a href="author/william-shakespeare.html">
-                        <img class="img img-raised" src="storage/authors-seeder/18.jpg">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="card-body">
-                    <a href="author/william-shakespeare.html">
-                        <h4 class="card-title">William Shakespeare</h4>
-                    </a>
-                    <p class="card-description">
-                                                    All the world&#039;s a stage and all the men and women merely players. They have their exits and their entrances; And one man in his time plays many parts.
-                                            </p>
-                </div>
-                <div class="card-footer">
-                                                            <a href="https://www.facebook.com/WilliamShakespeareAuthor/" class="btn btn-just-icon btn-link btn-white" target="_blank" rel="nofollow"><i
-                            class="fa fa-facebook-square"></i></a>
-                                                                                <a href="https://www.linkedin.com/in/william-shakespeare-ab549ba3" class="btn btn-just-icon btn-link btn-white" target="_blank" rel="nofollow"><i
-                            class="fa fa-linkedin"></i></a>
-                                    </div>
-            </div>
-        </div>
-    </div>
-</div>                                    <div class="col-md-6">
-    <div class="card card-profile card-plain">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="card-header card-header-image">
-                    <a href="author/jane-austen.html">
-                        <img class="img img-raised" src="storage/authors-seeder/25.jpg">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="card-body">
-                    <a href="author/jane-austen.html">
-                        <h4 class="card-title">Jane Austen</h4>
-                    </a>
-                    <p class="card-description">
-                                                    To be always firm must be to be often obstinate. When properly to relax is the trial of judgment.
-                                            </p>
-                </div>
-                <div class="card-footer">
-                                            <a href="https://twitter.com/JaneAustenLIVES" class="btn btn-just-icon btn-link btn-white" target="_blank" rel="nofollow"><i
-                            class="fa fa-twitter"></i></a>
-                                                            <a href="https://www.facebook.com/JaneAustenAuthor/" class="btn btn-just-icon btn-link btn-white" target="_blank" rel="nofollow"><i
-                            class="fa fa-facebook-square"></i></a>
-                                                                            </div>
-            </div>
-        </div>
-    </div>
-</div>                            </div>
-        </div>
-    </div>
+
     </div>
     <footer class="footer footer-white footer-big">
     <div class="container">

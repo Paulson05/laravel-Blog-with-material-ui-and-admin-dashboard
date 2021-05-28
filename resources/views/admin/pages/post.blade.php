@@ -48,6 +48,14 @@
                                                     </div>
 
                                                 </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <strong>slug</strong>
+                                                        <input type="text" name="slug" class="form-control" placeholder="email">
+
+                                                    </div>
+
+                                                </div>
 
 
 
@@ -111,7 +119,7 @@
                                   {{$post->title}}
                                 </td>
                                 <td>
-                                    {{$post->body}}
+                                    {{substr($post->body, 0, 40)}} {{strlen(strip_tags($post->body)) > 40 ? "...." : ""}}
                                 </td>
 
                                     <td>
