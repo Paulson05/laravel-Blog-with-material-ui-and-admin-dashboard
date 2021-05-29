@@ -15,7 +15,7 @@
                         @endforeach
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <h5>Tags</h5>
                     <ul class="links-horizontal">
                          @foreach($tags as $tag)

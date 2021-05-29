@@ -1,7 +1,7 @@
 @extends('admin.templetes.defaults')
 @section('title', '| post')
 @section('content')
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+{{--    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>--}}
 
     <script>
         tinymce.init({
@@ -85,6 +85,15 @@
                                                     </div>
 
                                                 </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <strong>upload image</strong>
+
+                                                        <input type="file" name="image">
+
+                                                    </div>
+
+                                                </div>
 
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                                     <div class="form-group">
@@ -138,6 +147,9 @@
                             <th>
                                 category
                             </th>
+                            <th>
+                                image
+                            </th>
 
                             </thead>
                             <tbody>
@@ -159,6 +171,10 @@
                                     <td>
                                         {{$post->category_id}}
                                     </td>
+                                    <td>
+                                        <img  src ="/upload/images/{{$post->image}}" height= "70px;" width = "80px;">
+                                    </td>
+
                                     <td>
                                         <a href="" title="show">
                                             <i class="btn btn-primary btn-sm fa fa-eye" ></i>

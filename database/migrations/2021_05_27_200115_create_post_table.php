@@ -16,10 +16,11 @@ CreatePostTable extends Migration
     public function up()
     {
         Schema::create('post', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('title');
             $table->string('body');
             $table->string('slug');
+            $table->string('image');
             $table->unsignedBigInteger('category_id')->nullable();
             $table->timestamps();
         });

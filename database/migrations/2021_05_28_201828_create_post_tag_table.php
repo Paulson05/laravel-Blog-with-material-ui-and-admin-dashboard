@@ -17,7 +17,7 @@ class CreatePostTagTable extends Migration
             $table->increments('id');
             $table->foreignId('post_id')->references('id')->on('post')->cascadeOnDelete();
             $table->foreignId('tag_id')->references('id')->on('tag')->cascadeOnDelete();
-            $table->timestamps();
+
         });
     }
 

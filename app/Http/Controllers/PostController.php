@@ -48,12 +48,25 @@ class PostController extends Controller
         $this->validate($request,[
             'title' => 'required',
             'body'=>  'required',
-            'slug' => 'required'
-        ]);
-        $array = collect($request->only(['title', 'body', 'slug', 'category_id']))->all();
+            'slug' => 'required',
+            'image' => 'required',
+            'category_id' => 'required'
 
-        $post = Post::create($array);
+        ]);
+
+        if ( $request->hasfile('image')){
+            $file  =$request->file('image');
+            $extension = $file->getClientOriginalExtension();
+            $filename =    time() . '.' .$extension;
+            $file->move('upload/images', $filename);
+
+        }
+        else {
+            $filename='';
+        }
+        $post = Post::create(collect($request->only(['title','body','slug','category_id']))->put('image',$filename)->all());
         $post->tags()->sync($request->name);
+        $post->save();
 
         return redirect()->back();
     }
