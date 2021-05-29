@@ -58,8 +58,33 @@
                                                 </div>
 
 
+                                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <strong>Category:</strong>
+                                                        <select class="form-control" name="category_id">
+                                                            <option>---select category---</option>
+                                                            @foreach($categories as $category)
+                                                                <option value="{{$category->id}}">{{$category->name}}</option>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12">
 
 
+                                                    <div class="form-group">
+                                                        <label><strong>Tags:</strong></label><br>
+                                                        <select name="name[]" id="cars" multiple class="form-control custom-select">
+                                                            @foreach($tags as $tag)
+
+
+                                                                <option value="{{$tag->id}}">{{$tag->name}}</option>
+                                                            @endforeach
+                                                        </select>
+
+                                                    </div>
+
+                                                </div>
 
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                                     <div class="form-group">
@@ -69,14 +94,7 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                                    <div class="form-group">
-                                                        <strong>body</strong>
-                                                        <textarea  id="mytextarea" cols="10" rows="5" placeholder="body" class="form-control" name="body"></textarea>
 
-                                                    </div>
-
-                                                </div>
 
 
 
@@ -117,6 +135,9 @@
                             <th>
                                 body
                             </th>
+                            <th>
+                                category
+                            </th>
 
                             </thead>
                             <tbody>
@@ -135,7 +156,9 @@
                                 <td>
                                     {{substr($post->body, 0, 40)}} {{strlen(strip_tags($post->body)) > 40 ? "...." : ""}}
                                 </td>
-
+                                    <td>
+                                        {{$post->category_id}}
+                                    </td>
                                     <td>
                                         <a href="" title="show">
                                             <i class="btn btn-primary btn-sm fa fa-eye" ></i>

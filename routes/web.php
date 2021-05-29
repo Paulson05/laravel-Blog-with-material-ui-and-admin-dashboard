@@ -4,7 +4,10 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\TagController;
+use App\Models\Category;
 use App\Models\Post;
+use App\Models\Tag;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,14 +23,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $posts = Post::all();
+    $tags = Tag::all();
+    $categories = Category::all();
     return view('homepage.pages.index')->with([
-        'posts' => $posts
+        'posts' => $posts,
+        'tags' => $tags,
+        'categories' => $categories
     ]);
 });
 
 Route::get('admin', [AdminController::class, 'admin'])->name('admin');
 Route::resource('post', PostController::class)->only(['index','store','show','update','destroy','edit',  ]);
 Route::resource('category', CategoriesController::class)->only(['index','store','show','update','destroy','edit',  ]);
+Route::resource('tag', TagController::class)->only(['index','store','show','update','destroy','edit',  ]);
+
 
 Route::get('blog/{post:slug}', [BlogController::class, 'getSinglePost'])->name('getSinglePost')
     ->where('slug', '[\w\d\-\_]+');

@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
-use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class TagController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,12 +14,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        $categories = Category::all();
         $tags = Tag::all();
-        return view('admin.pages.post')->with([
-            'posts' => $posts,
-            'categories' => $categories,
+        return view('admin.pages.tag')->with([
             'tags' => $tags
         ]);
     }
@@ -33,7 +27,7 @@ class PostController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -44,17 +38,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-
-        $this->validate($request,[
-            'title' => 'required',
-            'body'=>  'required',
-            'slug' => 'required'
-        ]);
-        $array = collect($request->only(['title', 'body', 'slug', 'category_id']))->all();
-
-        $post = Post::create($array);
-        $post->tags()->sync($request->name);
-
+        $this->validate($request, ([
+            'name' => 'required'
+        ]));
+        $array = collect($request->only(['name']))->all();
+        Tag::create($array);
         return redirect()->back();
     }
 

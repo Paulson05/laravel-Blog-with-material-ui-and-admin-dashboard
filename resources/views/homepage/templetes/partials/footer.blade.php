@@ -2,114 +2,27 @@
     <div class="container">
         <div class="content">
             <div class="row">
-                <div class="col-md-3">
-                    <h5>Authors</h5>
-                    <ul class="links-vertical">
-                        <li>
-                            <a href="author/virginia-woolf.html">
-                                Virginia Woolf
-                            </a>
-                        </li>
-                        <li>
-                            <a href="author/ernest-hemingway.html">
-                                Ernest Hemingway
-                            </a>
-                        </li>
-                        <li>
-                            <a href="author/william-shakespeare.html">
-                                William Shakespeare
-                            </a>
-                        </li>
-                        <li>
-                            <a href="author/jane-austen.html">
-                                Jane Austen
-                            </a>
-                        </li>
-                        <li>
-                            <a href="author/leo-tolstoy.html">
-                                Leo Tolstoy
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
                 <div class="col-md-3">
                     <h5>Categories</h5>
                     <ul class="links-vertical">
-                        <li>
-                            <a href="category/travel.html">
-                                Travel
-                            </a>
-                        </li>
-                        <li>
-                            <a href="category/food.html">
-                                Food
-                            </a>
-                        </li>
-                        <li>
-                            <a href="category/technology.html">
-                                Technology
-                            </a>
-                        </li>
-                        <li>
-                            <a href="category/fashion.html">
-                                Fashion
-                            </a>
-                        </li>
+                        @foreach($categories as $category)
                         <li>
                             <a href="category/health.html">
-                                Health
+                                {{($category->name)}}
                             </a>
                         </li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h5>Tags</h5>
                     <ul class="links-horizontal">
+                         @foreach($tags as $tag)
                         <li>
-                            <a style = "padding:1px" href="tag/budget-traveling.html"><span style="background-color: #e91e63" class="badge badge-pill">Budget travelling</span></a>
+                            <a style = "padding:1px" href="tag/haute-couture.html"><span style="background-color: #4caf50" class="badge badge-pill">{{$tag->name}}</span></a>
                         </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/healthy-eating.html"><span style="background-color: #f44336" class="badge badge-pill">Healthy eating</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/web-dev.html"><span style="background-color: #ff9800" class="badge badge-pill">Web dev</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/destinations.html"><span style="background-color: #4caf50" class="badge badge-pill">Destinations</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/foodie.html"><span style="background-color: #00bcd4" class="badge badge-pill">Foodie</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/nature.html"><span style="background-color: #00bcd4" class="badge badge-pill">Nature</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/tips%26tricks.html"><span style="background-color: #e91e63" class="badge badge-pill">Tips &amp; tricks</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/start-up.html"><span style="background-color: #6c757d" class="badge badge-pill">Start-up</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/recipes.html"><span style="background-color: #9c27b0" class="badge badge-pill">Recipes</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/trending.html"><span style="background-color: #00bcd4" class="badge badge-pill">Trending</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/open-source.html"><span style="background-color: #f44336" class="badge badge-pill">Open source</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/admin-dashboards.html"><span style="background-color: #9c27b0" class="badge badge-pill">Admin dashboards</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/street-style.html"><span style="background-color: #6c757d" class="badge badge-pill">Street style</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/haute-couture.html"><span style="background-color: #4caf50" class="badge badge-pill">Haute couture</span></a>
-                        </li>
-                        <li>
-                            <a style = "padding:1px" href="tag/nutrition.html"><span style="background-color: #4caf50" class="badge badge-pill">Nutrition</span></a>
-                        </li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="col-md-3">

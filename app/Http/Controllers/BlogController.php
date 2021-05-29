@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
-    public function getSinglePost(Post $post){
+    public function getSinglePost(Post $post,  Tag $tags){
 
-//             $tags =Tag::all();
+             $tags =Tag::all();
         return view('homepage.pages.singlepage')->with([
             'post'=> $post,
-//            'tags'=> $tags
+            'tags'=> $tags
         ]);
     }
 }

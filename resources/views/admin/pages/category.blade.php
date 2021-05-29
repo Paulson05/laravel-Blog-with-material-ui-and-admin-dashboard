@@ -81,6 +81,7 @@
                                 <tr>
                                     <td>
                                         {{$category->id}}
+
                                     </td>
 
                                     <td>

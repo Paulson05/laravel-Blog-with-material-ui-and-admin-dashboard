@@ -144,9 +144,9 @@
                             </li>
 
                             <li >
-                                <a href="">
+                                <a href="{{route('tag.index')}}">
                                     <span class="sidebar-mini-icon">T</span>
-                                    <span class="sidebar-normal">Testimony</span>
+                                    <span class="sidebar-normal">Tag</span>
                                 </a>
                             </li>
                             <li >

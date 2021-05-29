@@ -27,7 +27,7 @@
                                             </div>
                                             <div class="col-md-8">
                                                 <h6 class="card-category">
-                                                    <a href="category/technology.html" class="text-dark">Technology</a>
+                                                    <a href="category/technology.html" class="text-dark btn btn-success">{{optional($post->category)->name}}</a>
                                                 </h6>
                                                 <h3 class="card-title">
                                                     <a href="article/trends-in-ux-design-for-start-ups.html">{{$post->title}}</a>
@@ -38,10 +38,13 @@
                                                     <a href="{{ route('getSinglePost',['post'=>$post->slug])  }}" class="btn btn-danger btn-sm"> Read More </a>
                                                 </p>
                                                 <p class="card-tags">
-                                                    <a href="tag/destinations.html"><span style="background-color: #4caf50;" class="badge badge-pill">Destinations</span></a>
-                                                    <a href="tag/start-up.html"><span style="background-color: #6c757d;" class="badge badge-pill">Start-up</span></a>
-                                                    <a href="tag/trending.html"><span style="background-color: #00bcd4;" class="badge badge-pill">Trending</span></a>
-                                                    <a href="tag/haute-couture.html"><span style="background-color: #4caf50;" class="badge badge-pill">Haute couture</span></a>
+                                                    @foreach($post->tags as $tag)
+
+                                                        <a href="tag/haute-couture.html"><span style="background-color: #4caf50;" class="badge badge-pill">{{($tag->name)}}</span></a>
+
+
+                                                    @endforeach
+
                                                 </p>
                                                 <p class="author">
                                                     by

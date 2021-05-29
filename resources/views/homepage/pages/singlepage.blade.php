@@ -13,14 +13,14 @@
                       <h2 class=" text-capitalize">{{$post->body}}</h2>
                   </div>
                     <hr>
-{{--                    category: <span class="btn btn-primary">{{optional($post->category)->name}}</span>--}}
-{{--                    <hr>--}}
-{{--                    Tag:--}}
-{{--                    @foreach($post->tags as $tag)--}}
-{{--                        <span class="btn btn-success">{{($tag->name)}}</span>--}}
+                    category: <span class="btn btn-primary">{{optional($post->category)->name}}</span>
+                    <hr>
+                    Tag:
+                    @foreach($post->tags as $tag)
+                        <span class="btn btn-success">{{($tag->name)}}</span>
 
 
-{{--                    @endforeach--}}
+                    @endforeach
 
 
                 </div>
