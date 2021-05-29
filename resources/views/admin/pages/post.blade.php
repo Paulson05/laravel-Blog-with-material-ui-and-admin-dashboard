@@ -184,11 +184,12 @@
                                             <i class="btn btn-success btn-sm  fa fa-edit" ></i>
                                         </a>
 
-                                        <form style="display: inline-block" method="post" action="" >
+                                        <form style="display: inline-block" method="post" action="{{route('post.destroy', ['post'=> $post->id])}}" >
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-danger  p-0"><i class="btn btn-danger btn-sm fa fa-trash" ></i></button>
                                         </form>
+
                                     </td>
 
                             </tr>
