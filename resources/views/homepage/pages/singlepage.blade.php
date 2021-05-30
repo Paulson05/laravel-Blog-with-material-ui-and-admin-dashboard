@@ -3,13 +3,22 @@
 
 
 @section('content')
-    <div class="container">
+    <div class="container pt-5">
         <div class="row">
             <div class="container">
+
                 <div class="col-md-8 justify-content-center">
 
                   <div class="container">
+
+
+
                       <h2 class="text-center ">{{$post->title}}</h2>
+                      <div class="card-header card-header-image justify-content-center">
+                          <a href="article/trends-in-ux-design-for-start-ups.html">
+                              <img src="/upload/images/{{$post->image}}">
+                          </a>
+                      </div>
                       <h2 class=" text-capitalize">{{$post->body}}</h2>
                   </div>
                     <hr>

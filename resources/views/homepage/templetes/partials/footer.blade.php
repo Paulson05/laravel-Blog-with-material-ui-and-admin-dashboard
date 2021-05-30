@@ -17,13 +17,12 @@
                 </div>
                 <div class="col-md-4">
                     <h5>Tags</h5>
-                    <ul class="links-horizontal">
+
                          @foreach($tags as $tag)
-                        <li>
-                            <a style = "padding:1px" href="tag/haute-couture.html"><span style="background-color: #4caf50" class="badge badge-pill">{{$tag->name}}</span></a>
-                        </li>
+                              <div><p class="btn-sm btn  btn-success">{{$tag->name}}</p></div>
+
                         @endforeach
-                    </ul>
+
                 </div>
                 <div class="col-md-3">
                     <h5>Subscribe to Newsletter</h5>

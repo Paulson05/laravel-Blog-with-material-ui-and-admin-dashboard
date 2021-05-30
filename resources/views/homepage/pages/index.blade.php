@@ -27,6 +27,7 @@
                                             </div>
                                             <div class="col-md-8">
                                                 <h6 class="card-category">
+                                                    category:
                                                     <a href="category/technology.html" class="text-dark ">{{optional($post->category)->name}}</a>
                                                 </h6>
                                                 <h3 class="card-title">
@@ -73,15 +74,16 @@
                                         </div>
                                         <div class="card-body">
                                             <h6 class="card-category">
-                                                <a href="category/fashion.html" class="text-dark">{{optional($post->category)->name}}</a>
+                                         <span>category:</span>       <a href="category/fashion.html" class="text-dark">{{optional($post->category)->name}}</a>
                                             </h6>
                                             <h4 class="card-title">
                                                 <a href="article/the-10-biggest-street-style-trends-of-2019.html">{{$post->title}}</a>
                                             </h4>
                                             <p class="card-tags">
+                                                <span>tags:</span>
                                                 @foreach($post->tags as $tag)
 
-                                                    <a href="tag/haute-couture.html"><span style="background-color: #4caf50;" class="badge badge-pill">{{($tag->name)}}</span></a>
+                                                <a href="tag/haute-couture.html"><span style="background-color: #4caf50;" class="badge badge-pill">{{($tag->name)}}</span></a>
 
 
                                                 @endforeach

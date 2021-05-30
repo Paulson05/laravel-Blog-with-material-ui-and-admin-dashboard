@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $posts = Post::all();
-    $post4 = Post::orderBy('created_at', 'desc')->limit(3)->get();
+    $post4 = Post::orderBy('created_at', 'asc')->limit(3)->get();
 
     $tags = Tag::all();
     $categories = Category::all();
