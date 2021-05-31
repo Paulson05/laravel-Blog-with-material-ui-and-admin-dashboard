@@ -103,7 +103,7 @@
 
                                 </div>
                                 @endforeach
-                                    <a href="all_articles.html" class="btn btn-rose btn-raised btn-round">
+                                    <a href="{{route('post.create')}}" class="btn btn-rose btn-raised btn-round">
                                     View All
                                 </a>
                             </div>

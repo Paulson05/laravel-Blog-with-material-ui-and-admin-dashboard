@@ -33,7 +33,10 @@ class PostController extends Controller
      */
     public function create()
     {
-
+        $posts = Post::all();
+      return view('homepage.pages.allpost')->with([
+          'posts' => $posts
+      ]);
     }
 
     /**

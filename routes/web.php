@@ -36,7 +36,7 @@ Route::get('/', function () {
 });
 
 Route::get('admin', [AdminController::class, 'admin'])->name('admin');
-Route::resource('post', PostController::class)->only(['index','store','show','update','destroy','edit',  ]);
+Route::resource('post', PostController::class)->only(['index','store','show','update','destroy','edit', 'create'  ]);
 Route::resource('category', CategoriesController::class)->only(['index','store','show','update','destroy','edit',  ]);
 Route::resource('tag', TagController::class)->only(['index','store','show','update','destroy','edit',  ]);
 

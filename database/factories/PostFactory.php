@@ -29,6 +29,8 @@ class PostFactory extends Factory
             'image'=> $this->faker->image('public/upload/images', 400, 300, null, false),
               'category_id' =>$this->faker->randomElement(Category::pluck('id')->toArray())
 
+
+
         ];
     }
 }
