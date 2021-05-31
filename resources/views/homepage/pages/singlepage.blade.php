@@ -38,25 +38,27 @@
         <hr>
         <div class="row">
             <div class="col-md-4 p-2">
-                <h3> <i class="fas fa-comment-alt m-2"></i> <span class="m-1">comments</span></h3>
+                <h3> <i class="fas fa-comment-alt m-2"></i> <span class="m-1">comments {{$post->comments->count()}} </span></h3>
 
-
+                @foreach($post->comments as $comment)
                     <div class="row">
                         <div>
-                            <p><span class="m-2">Name:</span> <span class="mt-5"></span></p>
+                            <p><span class="m-2">Name:{{$comment->name}}</span> <span class="mt-5">{{date ('M j, Y h:ia', strtotime($comment->created_at))}}</span></p>
 
 
                         </div>
-                        <span class="mt-3">  Comments: </span>
+                        <span class="mt-3">  Comments: {{$comment->comments}}</span>
                         <hr>
                     </div>
+
+                @endforeach
 
 
 
             </div>
         </div>
         <div class="row">
-            <form action="" method="post">
+            <form action="{{route('comments.store',['comments'=>$post->id])}}" method="post">
                 @csrf
 
                 <div class="row justify-content-center">

@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TagController;
 use App\Models\Category;
@@ -39,6 +40,7 @@ Route::get('admin', [AdminController::class, 'admin'])->name('admin');
 Route::resource('post', PostController::class)->only(['index','store','show','update','destroy','edit', 'create'  ]);
 Route::resource('category', CategoriesController::class)->only(['index','store','show','update','destroy','edit',  ]);
 Route::resource('tag', TagController::class)->only(['index','store','show','update','destroy','edit',  ]);
+Route::resource('comments', CommentController::class)->only(['index','store','show','update','destroy','edit',  ]);
 
 
 Route::get('blog/{post:slug}', [BlogController::class, 'getSinglePost'])->name('getSinglePost')

@@ -47,6 +47,8 @@
                                                     @endforeach
 
                                                 </p>
+                                                <h3> <i class="fas fa-comment-alt m-2"></i> {{$post->comments->count()}}<span class="m-1">comments</span></h3>
+
                                                 <p class="author">
                                                     by
                                                     <a href="author/william-shakespeare.html">
