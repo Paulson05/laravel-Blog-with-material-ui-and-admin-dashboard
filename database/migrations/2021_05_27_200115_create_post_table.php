@@ -18,7 +18,7 @@ CreatePostTable extends Migration
         Schema::create('post', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->string('body');
+            $table->text('body');
             $table->string('slug');
             $table->string('image');
             $table->unsignedBigInteger('category_id')->nullable();

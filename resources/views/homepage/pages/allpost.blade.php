@@ -21,7 +21,7 @@
                     </h3>
 
                     <p class="card-description">
-                        {{$post->body}}
+                        {{Substr(strip_tags($post->body), 0, 100)}} {{strlen(strip_tags($post->body)) > 150 ? "......" : ""}}
                         <a href="{{ route('getSinglePost',['post'=>$post->slug])  }}" class="btn btn-danger btn-sm"> Read More </a>
                     </p>
                     <p class="card-tags">

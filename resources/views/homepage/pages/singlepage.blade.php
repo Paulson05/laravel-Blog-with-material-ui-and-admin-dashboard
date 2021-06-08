@@ -19,7 +19,7 @@
                               <img src="/upload/images/{{$post->image}}" height="300px; width:200px;">
                           </a>
                       </div>
-                      <h2 class=" text-capitalize">{{$post->body}}</h2>
+                      <p class=" text-capitalize">{{$post->body}}</p>
                   </div>
                     <hr>
                     category: <span class="btn btn-primary">{{optional($post->category)->name}}</span>
@@ -41,14 +41,17 @@
                 <h3> <i class="fas fa-comment-alt m-2"></i> <span class="m-1">comments {{$post->comments->count()}} </span></h3>
 
                 @foreach($post->comments as $comment)
-                    <div class="row">
-                        <div>
-                            <p><span class="m-2">Name:{{$comment->name}}</span> <span class="mt-5">{{date ('M j, Y h:ia', strtotime($comment->created_at))}}</span></p>
+                    <div class="row  pt-2" >
+                        <div class="card ">
+                            <div class="card-body ">
+                                <p><span class="m-2 text-success">Name:{{$comment->name}}</span> </p>
 
-
+                                <textarea class="text-primary form-control" rows="5" cols="10" placeholder="comments" > {{$comment->comments}}</textarea>
+                                <span class="mt-5 text-secondary">{{date ('M j, Y h:ia', strtotime($comment->created_at))}}</span>
+                            </div>
                         </div>
-                        <span class="mt-3">  Comments: {{$comment->comments}}</span>
-                        <hr>
+
+
                     </div>
 
                 @endforeach

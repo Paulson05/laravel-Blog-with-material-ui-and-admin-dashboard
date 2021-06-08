@@ -8,6 +8,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\TagController;
 use App\Models\Category;
 use App\Models\Post;
+
 use App\Models\Tag;
 use Illuminate\Support\Facades\Route;
 
@@ -23,8 +24,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+
+
     $posts = Post::all();
     $post4 = Post::orderBy('created_at', 'asc')->limit(3)->get();
+
 
     $tags = Tag::all();
     $categories = Category::all();
@@ -32,7 +37,8 @@ Route::get('/', function () {
         'posts' => $posts,
         'post4' => $post4,
         'tags' => $tags,
-        'categories' => $categories
+        'categories' => $categories,
+
     ]);
 });
 
@@ -42,6 +48,6 @@ Route::resource('category', CategoriesController::class)->only(['index','store',
 Route::resource('tag', TagController::class)->only(['index','store','show','update','destroy','edit',  ]);
 Route::resource('comments', CommentController::class)->only(['index','store','show','update','destroy','edit',  ]);
 
-
+Route::get('categorypost/{id}', [CategoriesController::class, 'categorypost'] )->name('categorypost');
 Route::get('blog/{post:slug}', [BlogController::class, 'getSinglePost'])->name('getSinglePost')
     ->where('slug', '[\w\d\-\_]+');

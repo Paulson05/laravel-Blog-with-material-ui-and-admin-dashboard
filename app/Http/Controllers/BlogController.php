@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
+
     public function getSinglePost(Post $post,  Tag $tags){
 //            $post = Post::all();
 //             $tags =Tag::all();

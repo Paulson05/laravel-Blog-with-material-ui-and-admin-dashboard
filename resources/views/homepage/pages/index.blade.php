@@ -28,20 +28,21 @@
                                             <div class="col-md-8">
                                                 <h6 class="card-category">
                                                     category:
-                                                    <a href="category/technology.html" class="text-dark ">{{optional($post->category)->name}}</a>
+                                                    <a href="{{route('categorypost',['id'=>optional($post->category)->id])}}" class="text-dark ">{{optional($post->category)->name}}</a>
                                                 </h6>
                                                 <h3 class="card-title">
                                                     <a href="article/trends-in-ux-design-for-start-ups.html">{{$post->title}}</a>
                                                 </h3>
 
                                                 <p class="card-description">
-                                                    {{$post->body}}
-                                                    <a href="{{ route('getSinglePost',['post'=>$post->slug])  }}" class="btn btn-danger btn-sm"> Read More </a>
+                                                <p>{{Substr(strip_tags($post->body), 0, 100)}} {{strlen(strip_tags($post->body)) > 150 ? "......" : ""}}</p>
+
+                                                <a href="{{ route('getSinglePost',['post'=>$post->slug])  }}" class="btn btn-danger btn-sm"> Read More </a>
                                                 </p>
                                                 <p class="card-tags">
                                                     @foreach($post->tags as $tag)
 
-                                                        <a href="tag/haute-couture.html"><span style="background-color: #4caf50;" class="badge badge-pill">{{($tag->name)}}</span></a>
+                                                        <a href="{{route('categorypost',['id'=>optional($post->category)->id])}}"><span style="background-color: #4caf50;" class="badge badge-pill">{{($tag->name)}}</span></a>
 
 
                                                     @endforeach
@@ -91,7 +92,7 @@
                                                 @endforeach
                                             </p>
                                             <p class="card-description">
-                                              {{$post->body}}
+                                                {{Substr(strip_tags($post->body), 0, 100)}} {{strlen(strip_tags($post->body)) > 150 ? "......" : ""}}
                                                 <a href="{{ route('getSinglePost',['post'=>$post->slug])  }}"> Read More </a>
                                             </p>
                                             <p class="author">
@@ -108,6 +109,11 @@
                                     <a href="{{route('post.create')}}" class="btn btn-rose btn-raised btn-round">
                                     View All
                                 </a>
+                                <div>
+                                    {{-- @foreach($alltags as $tag)
+                                     <p>{{$tag->title}}</p>
+                                    @endforeach --}}
+                                </div>
                             </div>
                         </div>
                     </div>

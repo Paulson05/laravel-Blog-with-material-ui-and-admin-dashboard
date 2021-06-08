@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -89,5 +91,17 @@ class CategoriesController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function categorypost(Category $id){
+
+        $alltags  =$id->with(['posts'])->where('id',$id->id)->get();
+//        dd($alltags);
+        return view('homepage.pages.categorypost')->with([
+         'alltags' => $alltags,
+
+
+
+        ]);
     }
 }

@@ -16,13 +16,16 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+
+
+     $posts = Post::all();
         $categories = Category::all();
         $tags = Tag::all();
         return view('admin.pages.post')->with([
             'posts' => $posts,
             'categories' => $categories,
-            'tags' => $tags
+            'tags' => $tags,
+
         ]);
     }
 
