@@ -4,10 +4,6 @@
 @section('content')
     <div class="main main-raised">
 
-
-
-
-
         <div class="main ">
             <div class="container">
                 <div class="section">
@@ -77,7 +73,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h6 class="card-category">
-                                         <span>category:</span>       <a href="category/fashion.html" class="text-dark">{{optional($post->category)->name}}</a>
+                                         <span>category:</span>       <a href="{{route('categorypost',['id'=>optional($post->category)->id])}}" class="text-dark">{{optional($post->category)->name}}</a>
                                             </h6>
                                             <h4 class="card-title">
                                                 <a href="article/the-10-biggest-street-style-trends-of-2019.html">{{$post->title}}</a>
