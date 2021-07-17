@@ -4,7 +4,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\TagController;
 use App\Models\Category;
 use App\Models\Post;
@@ -44,10 +46,18 @@ Route::get('/', function () {
 
 Route::get('admin', [AdminController::class, 'admin'])->name('admin');
 Route::resource('post', PostController::class)->only(['index','store','show','update','destroy','edit', 'create'  ]);
-Route::resource('category', CategoriesController::class)->only(['index','store','show','update','destroy','edit',  ]);
-Route::resource('tag', TagController::class)->only(['index','store','show','update','destroy','edit',  ]);
-Route::resource('comments', CommentController::class)->only(['index','store','show','update','destroy','edit',  ]);
+Route::resource('category', CategoriesController::class)->only(['index','store','show','update','destroy','edit', 'create'  ]);
+
+Route::resource('tag', TagController::class)->only(['index','store','show','update','destroy','edit', 'create'  ]);
+Route::resource('comments', CommentController::class)->only(['index','store','show','update','destroy','edit', 'create' ]);
 
 Route::get('categorypost/{id}', [CategoriesController::class, 'categorypost'] )->name('categorypost');
 Route::get('blog/{post:slug}', [BlogController::class, 'getSinglePost'])->name('getSinglePost')
     ->where('slug', '[\w\d\-\_]+');
+Route::resource('role', RoleController::class)->only(['index','store','show','update','destroy','edit', 'create'  ]);
+Route::resource('permission', PermissionController::class)->only(['index','store','show','update','destroy','edit', 'create'  ]);
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

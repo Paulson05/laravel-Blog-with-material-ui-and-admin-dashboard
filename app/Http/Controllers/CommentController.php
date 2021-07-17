@@ -36,6 +36,7 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request->all());
         $this->validate($request,[
             'name'=>'required|max:25',
             'email'=>'required|email',

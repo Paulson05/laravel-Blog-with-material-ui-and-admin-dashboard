@@ -21,7 +21,7 @@ CreatePostTable extends Migration
             $table->text('body');
             $table->string('slug');
             $table->string('image');
-            $table->unsignedBigInteger('category_id')->nullable();
+            $table->bigInteger('category_id');
             $table->timestamps();
         });
     }

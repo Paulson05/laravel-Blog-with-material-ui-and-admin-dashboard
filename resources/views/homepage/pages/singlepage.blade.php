@@ -66,9 +66,9 @@
 
                 <div class="row justify-content-center">
                     <div class="col-md-4 p-2">
-                        <input type="text" name="name" class="form-control" placeholder="name" @error('email'){{'is-invalid'}}@enderror>
-                        @error('email')
-                        <span class="form-text text-danger">{{$errors->first('email')}}</span>
+                        <input type="text" name="name" class="form-control" placeholder="name" @error('name'){{'is-invalid'}}@enderror>
+                        @error('name')
+                        <span class="form-text text-danger">{{$errors->first('name')}}</span>
                         @enderror
                     </div>
 

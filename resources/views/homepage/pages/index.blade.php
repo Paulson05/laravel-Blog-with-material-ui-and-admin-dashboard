@@ -31,9 +31,9 @@
                                                 </h3>
 
                                                 <p class="card-description">
-                                                <p>{{Substr(strip_tags($post->body), 0, 100)}} {{strlen(strip_tags($post->body)) > 150 ? "......" : ""}}</p>
+                                                <p>{{Substr(strip_tags($post->body), 0, 100)}} {{strlen(strip_tags($post->body)) > 150 ? "......" : ""}}<span>                                                <a href="{{ route('getSinglePost',['post'=>$post->slug])  }}" > Read More </a>
+</span></p>
 
-                                                <a href="{{ route('getSinglePost',['post'=>$post->slug])  }}" class="btn btn-danger btn-sm"> Read More </a>
                                                 </p>
                                                 <p class="card-tags">
                                                     @foreach($post->tags as $tag)

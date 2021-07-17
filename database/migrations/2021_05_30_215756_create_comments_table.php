@@ -20,7 +20,7 @@ class CreateCommentsTable extends Migration
             $table->text('comments');
             $table->boolean('approved');
             $table->timestamps();
-            $table->foreignId('post_id')->references('id')->on('posts')->cascadeOnDelete();
+//            $table->foreignId('post_id')->references('id')->on('posts')->cascadeOnDelete();
 
         });
     }
